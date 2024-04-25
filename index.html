@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link href="css/style.css" rel="stylesheet">
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+
+    <div class="navbar-container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="img/logo.jpg" alt="">
+        </div>
+        <div class="cart-icon">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <sup class="dynamic-count"></sup>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="main-container">
+        <div class="renderData"></div>
+      <div class="renderCartData">
+        <div class="emptyCart">
+          <h1>Your Cart is Empty</h1>
+        </div>
+        <div class="yourCart-items">
+          <div class="cItems">
+            <h1>Your Cart Items</h1>
+          </div>
+        </div>
+        <div class="line">
+          <hr>
+        </div>
+        <div class="tContainer">
+          <p id="total_price"></p>
+        <a>
+         <!-- href="./checkout.html"> -->
+             <button>CheckOut</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="checkout-heading">
+        <h1>CHECKOUT</h1>
+      </div>
+  
+      <div class="inputs-container">
+        <div class="input-box">
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter Your Name"
+            autocomplete="off"
+          />
+          <input
+            type="text"
+            id="city"
+            placeholder="Enter Your City"
+            autocomplete="off"
+          />
+          <input
+            type="number"
+            id="num"
+            placeholder="Enter Your Number"
+            autocomplete="off"
+          />
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter Your Email"
+            autocomplete="off"
+          />
+          <input
+            type="text"
+            id="sadress"
+            placeholder="Enter Your Shipping Adress"
+            autocomplete="off"
+          />
+          <button id="place_order">Place Order</button>
+        </div>
+      </div>
+
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
